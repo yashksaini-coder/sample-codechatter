@@ -1,0 +1,6 @@
+Flask
+markupsafe
+groq
+python-dotenv
+Flask-Caching
+Flask-WTF
