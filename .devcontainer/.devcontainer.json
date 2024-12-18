@@ -1,6 +1,6 @@
 {
-  "name": "CodeChatter: AI-Powered Coding Assistant",
-  "image": "mcr.microsoft.com/devcontainers/python:3.12",
+  "name": "Python Flask Application",
+  "image": "mcr.microsoft.com/devcontainers/python:3.12-bullseye",
   "forwardPorts": [
     5000
   ],
@@ -12,19 +12,16 @@
         "python.linting.pylintEnabled": true,
         "python.formatting.autopep8Path": "/usr/local/bin/autopep8",
         "python.formatting.blackPath": "/usr/local/bin/black",
-        "python.formatting.yapfPath": "/usr/local/bin/yapf",
         "python.linting.banditPath": "/usr/local/bin/bandit",
         "python.linting.flake8Path": "/usr/local/bin/flake8",
         "python.linting.mypyPath": "/usr/local/bin/mypy",
         "python.linting.pycodestylePath": "/usr/local/bin/pycodestyle",
-        "python.linting.pydocstylePath": "/usr/local/bin/pydocstyle",
-        "python.analysis.typeCheckingMode": "basic"
+        "python.linting.pydocstylePath": "/usr/local/bin/pydocstyle"
       },
       "extensions": [
         "ms-python.python",
         "ms-python.vscode-pylance",
-        "njpwerner.autodocstring",
-        "streetsidesoftware.code-spell-checker"
+        "njpwerner.autodocstring"
       ]
     }
   },
