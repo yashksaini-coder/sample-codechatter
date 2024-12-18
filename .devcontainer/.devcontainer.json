@@ -1,6 +1,6 @@
 {
   "name": "Python Flask Application",
-  "image": "mcr.microsoft.com/devcontainers/python:3.12-bullseye",
+  "image": "mcr.microsoft.com/devcontainers/python:3.12-bookworm",
   "forwardPorts": [
     5000
   ],
@@ -20,10 +20,16 @@
       },
       "extensions": [
         "ms-python.python",
-        "ms-python.vscode-pylance",
-        "njpwerner.autodocstring"
+        "ms-python.vscode-pylance"
       ]
     }
   },
-  "postCreateCommand": "pip install -r requirements.txt"
+    "portsAttributes": {
+      "5000": {
+          "label": "Hello Remote World",
+          "onAutoForward": "openPreview"
+      }
+  },
+  "postCreateCommand": "python -m pip install -r requirements.txt",
+  "postAttachCommand": "python app.py -p 5000"
 }
