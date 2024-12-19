@@ -32,7 +32,7 @@ CodeChatter v2 is an advanced Flask-based application that harnesses the power o
 
 4. **Run the Application**
    ```bash
-   python app.py
+   python -m flask run
    ```
 
 5. **Access the Application**
