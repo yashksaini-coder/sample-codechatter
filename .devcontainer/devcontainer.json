@@ -24,12 +24,6 @@
       ]
     }
   },
-    "portsAttributes": {
-      "5000": {
-          "label": "Hello Remote World",
-          "onAutoForward": "openPreview"
-      }
-  },
-  "postCreateCommand": "python -m pip install -r requirements.txt",
+  "postCreateCommand": "pip install -r requirements.txt",
   "postAttachCommand": "python app.py -p 5000"
 }
