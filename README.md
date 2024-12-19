@@ -22,13 +22,7 @@ CodeChatter is an advanced Flask-based application that harnesses the power of t
    daytona create https://github.com/yashksaini-coder/sample-codechatter
    ```  
 
-3. **Set Up a Virtual Environment** (Recommended)
-   ```bash
-   python -m venv venv
-   source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
-   ```
-
-4. **Configure Environment Variables**
+3. **Configure Environment Variables**
    Create a `.env` file in the root directory with the following content:
 
    ```
@@ -36,12 +30,12 @@ CodeChatter is an advanced Flask-based application that harnesses the power of t
    ```
    Replace `your_api_key_here` with your actual Groq API key.
 
-5. **Run the Application**
+4. **Run the Application**
    ```bash
    python app.py
    ```
 
-6. **Access the Application**
+5. **Access the Application**
    Open your web browser and navigate to `http://localhost:5000`
 
 ## 🌟 Key Features
