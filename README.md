@@ -1,7 +1,7 @@
 
-# Sample-CodeChatter: Python/Flask
+# CodeChatter v2: Python/Flask
 
-CodeChatter is an advanced Flask-based application that harnesses the power of the Groq API to provide intelligent coding assistance. This versatile tool offers multiple AI model selections, enabling developers to leverage artificial intelligence for various coding tasks, including code completion, debugging, and optimization.
+CodeChatter v2 is an advanced Flask-based application that harnesses the power of the Groq API to provide intelligent coding assistance. This versatile tool offers multiple AI model selections, enabling developers to leverage artificial intelligence for various coding tasks, including code completion, debugging, and optimization.
 
 | **Category**| **Technology**|
 |--------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -43,7 +43,6 @@ CodeChatter is an advanced Flask-based application that harnesses the power of t
 - **AI-Powered Coding Assistance**: Utilize state-of-the-art AI models to enhance your coding process.
 - **Multi-Model Support**: Choose from a range of AI models to best suit your specific coding needs.
 - **Syntax Highlighting**: Enjoy clear, color-coded syntax for multiple programming languages.
-- **One-Click Code Copying**: Easily copy generated code snippets with a single click.
 - **Responsive Design**: Access CodeChatter seamlessly across various devices and screen sizes.
 - **User-Friendly Interface**: Intuitive design for effortless interaction with AI models.
 
@@ -53,4 +52,4 @@ CodeChatter is an advanced Flask-based application that harnesses the power of t
 2. **Select AI Model**: Choose the most appropriate AI model for your task from the dropdown menu.
 3. **Submit Query**: Click the "Ask" button to send your request to the AI.
 4. **View Response**: The AI-generated code or explanation will appear in the display area.
-5. **Copy Code**: Use the copy button next to code snippets for easy copying.
+
