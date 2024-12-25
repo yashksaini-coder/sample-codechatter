@@ -1,4 +1,4 @@
-# Exclude all files
+<!-- # Exclude all files
 *
 
 # Include essential files and directories
@@ -10,3 +10,4 @@
 !*.css
 !*.js
 !.env
+ -->
