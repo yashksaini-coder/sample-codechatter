@@ -53,3 +53,23 @@ CodeChatter v2 is an advanced Flask-based application that harnesses the power o
 3. **Submit Query**: Click the "Ask" button to send your request to the AI.
 4. **View Response**: The AI-generated code or explanation will appear in the display area.
 
+## Contributing
+
+We welcome contributions to Cal Buddy! If you'd like to contribute, please follow these steps:
+
+1. Fork the repository
+2. Create a new branch (`git checkout -b feature/amazing-feature`)
+3. Make your changes
+4. Commit your changes (`git commit -m 'Add some amazing feature'`)
+5. Push to the branch (`git push origin feature/amazing-feature`)
+6. Open a Pull Request
+
+Please read our [Contributing Guidelines](CONTRIBUTING.md) for more details.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more information.
+
+---
+
+Made with ❤️ by [Yash K. Saini](https://github.com/yashksaini-coder)

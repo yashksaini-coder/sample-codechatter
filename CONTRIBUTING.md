@@ -1,23 +1,23 @@
-Here's a basic `CONTRIBUTING.md` file you can use for your **GroqDev** repository to guide contributors on how to contribute to the project:
+Here's a basic `CONTRIBUTING.md` file you can use for your **CodeChatter-v2** repository to guide contributors on how to contribute to the project:
 
 ---
 
-# Contributing to GroqDev
+# Contributing to CodeChatter-v2
 
-Thank you for considering contributing to **GroqDev**! We welcome all types of contributions, including code, documentation, bug reports, and feature suggestions. Please follow the guidelines below to help make the process smooth for everyone.
+Thank you for considering contributing to **CodeChatter-v2**! We welcome all types of contributions, including code, documentation, bug reports, and feature suggestions. Please follow the guidelines below to help make the process smooth for everyone.
 
 ## How to Contribute
 
 ### 1. Fork the Repository
-1. Navigate to the [GroqDev](https://github.com/yashksaini-coder/GroqDev) repository.
-2. Click the [Fork](https://github.com/yashksaini-coder/GroqDev/fork) button to create a copy of the repository under your GitHub account.
+1. Navigate to the [CodeChatter-v2](https://github.com/yashksaini-coder/CodeChatter-v2) repository.
+2. Click the [Fork](https://github.com/yashksaini-coder/CodeChatter-v2/fork) button to create a copy of the repository under your GitHub account.
 
 ### 2. Clone the Repository
 After forking, clone the repository to your local machine:
 
 ```bash
-git clone https://github.com/<your-username>/GroqDev.git
-cd GroqDev
+git clone https://github.com/yashksaini-coder/CodeChatter-v2.git
+cd CodeChatter-v2
 ```
 
 ### 3. Create a New Branch
@@ -86,11 +86,11 @@ For feature requests, please open a new issue and describe:
 - **How it could be implemented**.
 
 ## Improving the UI/UX & Front-End Design
-If you'd like to contribute to the UI/UX or Front-End design of the **GroqDev** app, feel free to suggest ideas or open an issue [here](https://github.com/yashksaini-coder/GroqDev/issues/new).
+If you'd like to contribute to the UI/UX or Front-End design of the **CodeChatter-v2** app, feel free to suggest ideas or open an issue [here](https://github.com/yashksaini-coder/CodeChatter-v2/issues/new).
 
 ## Code of Conduct
 Please note that we have a [Code of Conduct](CODE_OF_CONDUCT.md). By participating in this project, you agree to abide by its terms.
 
 ---
 
-Thank you for contributing to **GroqDev**! We look forward to collaborating with you!
+Thank you for contributing to **CodeChatter-v2**! We look forward to collaborating with you!
