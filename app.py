@@ -44,7 +44,7 @@ model_options = [
 
 # Add these constants near the top of the file, after the imports
 PORT = 2000
-DEBUG_MODE = False
+DEBUG_MODE = True
 HOST = '0.0.0.0'
 
 @app.route('/')
