@@ -42,6 +42,11 @@ model_options = [
     {"value": "mixtral-8x7b-32768", "name": "Mixtral 8x7B"},
 ]
 
+# Add these constants near the top of the file, after the imports
+PORT = 2000
+DEBUG_MODE = False
+HOST = '0.0.0.0'
+
 @app.route('/')
 @cache.cached(timeout=50)  # Cache this view for 50 seconds
 def index():
@@ -116,7 +121,11 @@ def not_found(e):
 
 if __name__ == '__main__':
     try:
-        app.run(debug=True, ssl_context='adhoc')
+        app.run(
+            host=HOST,
+            port=PORT,
+            debug=DEBUG_MODE
+        )
     except Exception as e:
         print(f"Failed to start the server: {e}")
         exit(1)
