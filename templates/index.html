@@ -46,7 +46,6 @@
         <div class="col-md-3 col-lg-2 bg-dark text-white p-3 sidebar">
           <h4 class="mb-4">CodeChatter AI</h4>
           <div class="model-selection mb-4">
-            <label class="form-label text-muted">Select Model</label>
             <select name="model" id="model-select" class="form-select">
               {% for model in model_options %}
               <option value="{{ model.value }}">{{ model.name }}</option>
