@@ -2,16 +2,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap');
 
 :root {
-    --primary-color: #2a6ee3;
-    --secondary-color: #f0f2f5;
-    --text-color: #1c1e21;
-    --accent-color: #e4e6eb;
-    --background-color: #ffffff;
-    --shadow-color: rgba(0, 0, 0, 0.1);
-    --chat-bg: #f8f9fa;
-    --message-bg: #ffffff;
-    --user-message-bg: #0d6efd;
-    --border-color: #dee2e6;
+    --primary-color: #3b4252;      /* Dark grey for primary elements */
+    --secondary-color: #eceff4;    /* Light tone for secondary elements */
+    --text-color: #d8dee9;         /* Light grey text */
+    --accent-color: #4c566a;       /* Accent dark grey */
+    --background-color: #2e3440;   /* Very dark background */
+    --shadow-color: rgba(0, 0, 0, 0.5);
+    --chat-bg: #3b4252;
+    --message-bg: #434c5e;
+    --user-message-bg: #5e81ac;
+    --border-color: #4c566a;
+    --gradient-bg: linear-gradient(135deg, #3b4252 0%, #434c5e 100%);
     --bs-primary: #0d6efd;
     --bs-secondary: #6c757d;
     --bs-success: #198754;
@@ -25,7 +26,7 @@ body {
     display: flex;
     flex-direction: column;
     font-family: 'Inter', system-ui, -apple-system, sans-serif;
-    background: var(--bs-background);
+    background: var(--background-color);
     overflow: hidden;
 }
 
@@ -34,6 +35,10 @@ canvas {
     display: flex;
     flex-direction: column;
     height: 100vh;
+}
+
+.text-muted {
+    color: var(--text-color);
 }
 
 .code-header {
@@ -85,6 +90,7 @@ form {
     flex-direction: column;
     gap: 15px;
     align-items: center;
+    color: var(--text-color);
 }
 
 textarea {
@@ -191,9 +197,9 @@ code {
     border: 1px solid var(--accent-color);
     background-color: rgb(38, 41, 46);
     font-size: 14px;
-    background: rgba(255,255,255,0.1);
+    background: var(--bs-chat-bubble);
     border: 1px solid rgba(255,255,255,0.2);
-    color: rgb(0, 0, 0);
+    color: var(--accent-color);
     border-radius: 0.5rem;
     transition: all var(--animation-timing);
 }
@@ -264,7 +270,7 @@ code {
     padding: 20px;
     background-color: var(--chat-bg);
     border-radius: 12px;
-    box-shadow: 0 2px 12px var(--shadow-color);
+    box-shadow: 0 4px 12px var(--shadow-color);
     height: calc(100vh - 160px);
     overflow-y: auto;
     padding: 1.5rem;
@@ -293,40 +299,41 @@ code {
 
 .message-bubble {
     padding: 12px 16px;
-    border-radius: 18px;
+    border-radius: 1rem;
     max-width: 85%;
     padding: 1rem 1.25rem;
     border-radius: 1rem;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+    background: var(--message-bg);
+    border: 1px solid var(--border-color);
 }
 
 .user .message-bubble {
-    background: var(--bs-primary);
-    color: white;
-    border-bottom-right-radius: 0.25rem;
+    background: var(--user-message-bg);
+    color: var(--secondary-color);
+    border-bottom-right-radius: 0.5rem;
 }
 
 .assistant .message-bubble {
-    background: var(--bs-chat-bubble);
-    border-bottom-left-radius: 0.25rem;
+    background: var(--message-bg);
+    border-bottom-left-radius: 0.5rem;
+    border: 1px solid var(--border-color);
+    color: var(--secondary-color);
 }
 
 .input-container {
-    position: sticky;
+    position: relative;
     bottom: 0;
     background-color: var(--background-color);
     padding: 20px;
-    border-top: 1px solid var(--accent-color);
+    border-top: 1px solid var(--border-color);
     width: 100%;
     max-width: 1200px;
-    margin: 0 auto;
-    background: white;
-    border-top: 1px solid rgba(0,0,0,0.1);
-    padding: 1rem;
-    position: fixed;
+    margin: auto auto;
+    background: rgb(181, 72, 72);
     bottom: 0;
     width: 100%;
-    z-index: 100;
+    box-shadow: 0 -2px 8px rgba(0,0,0,0.05);
 }
 
 .input-form {
@@ -343,8 +350,8 @@ code {
     flex: 1;
     height: 60px;
     padding: 15px 20px;
-    border: 2px solid var(--accent-color);
-    border-radius: 24px;
+    border: 1px solid var(--border-color) !important;
+    border-radius: 1.5rem !important;
     resize: none;
     font-size: 16px;
     transition: all 0.3s ease;
@@ -354,13 +361,13 @@ code {
     resize: none;
     border: 1px solid var(--bs-secondary) !important;
     transition: all var(--animation-timing) !important;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .chat-input:focus {
     outline: none;
-    border-color: var(--primary-color);
-    box-shadow: 0 0 0 2px rgba(42, 110, 227, 0.1);
-    box-shadow: 0 0 0 0.25rem rgba(13,110,253,0.15) !important;
+    border-color: var(--user-message-bg) !important;
+    box-shadow: 0 0 0 0.25rem rgba(94,129,172,0.25) !important;
 }
 
 .send-button {
@@ -385,11 +392,12 @@ code {
     align-items: center;
     justify-content: center;
     transition: all var(--animation-timing) !important;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .send-button:hover {
-    background-color: #1a5bc5;
-    transform: scale(1.05);
+    background-color: #4c566a;
+    transform: scale(1.1);
 }
 
 .send-button i {
@@ -446,6 +454,7 @@ code {
     
     .model-selection {
         width: 100%;
+        color: var(--text-color);
     }
     
     #model-select {
@@ -487,4 +496,22 @@ code {
 
 ::-webkit-scrollbar-thumb:hover {
     background: rgba(0,0,0,0.3);
+}
+
+/* Elevated sidebar with gradient background */
+.sidebar {
+    background: var(--gradient-bg);
+    color: var(--secondary-color);
+}
+
+/* Redesigned social links in sidebar */
+.sidebar .social-links a {
+    background: rgba(255,255,255,0.2);
+    border-radius: 8px;
+    padding: 8px;
+    transition: background 0.3s ease;
+}
+
+.sidebar .social-links a:hover {
+    background: rgba(255,255,255,0.3);
 }
