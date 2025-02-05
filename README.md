@@ -1,3 +1,4 @@
+![image](https://github.com/user-attachments/assets/10bdf8d3-cdaf-4057-a366-f20cbeb1fa75)
 
 # CodeChatter v2: Python/Flask
 
